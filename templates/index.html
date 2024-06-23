@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Heatstroke Prediction</title>
+</head>
+<body>
+    <h1>Heatstroke Prediction</h1>
+    <form action="/predict" method="post">
+        <label for="DHTTemp">DHT Temperature:</label>
+        <input type="number" name="DHTTemp" step="0.01" required><br><br>
+        
+        <label for="DS18bTemp">DS18b Temperature:</label>
+        <input type="number" name="DS18bTemp" step="0.01" required><br><br>
+        
+        <label for="Humidity">Humidity:</label>
+        <input type="number" name="Humidity" step="0.01" required><br><br>
+        
+        <label for="BloodPre1">Blood Pressure 1:</label>
+        <input type="number" name="BloodPre1" step="0.01" required><br><br>
+        
+        <label for="BloodPre2">Blood Pressure 2:</label>
+        <input type="number" name="BloodPre2" step="0.01" required><br><br>
+        
+        <label for="BMP">BMP:</label>
+        <input type="number" name="BMP" step="0.01" required><br><br>
+        
+        <label for="OxygenLevel">Oxygen Level (%):</label>
+        <input type="number" name="OxygenLevel" step="0.01" required><br><br>
+        
+        <label for="Age">Age:</label>
+        <input type="number" name="Age" required><br><br>
+        
+        <label for="Gender">Gender:</label>
+        <select name="Gender" required>
+            <option value="0">Female</option>
+            <option value="1">Male</option>
+        </select><br><br>
+        
+        <label for="Smoking">Smoking:</label>
+        <select name="Smoking" required>
+            <option value="0">Non-Smoker</option>
+            <option value="1">Smoker</option>
+        </select><br><br>
+        
+        <label for="HeartDisease">Heart Disease History:</label>
+        <select name="HeartDisease" required>
+            <option value="0">No History</option>
+            <option value="1">History</option>
+        </select><br><br>
+        
+        <label for="Stroke">Stroke History:</label>
+        <select name="Stroke" required>
+            <option value="0">No History</option>
+            <option value="1">History</option>
+        </select><br><br>
+        
+        <input type="submit" value="Predict Heatstroke">
+    </form>
+</body>
+</html>
